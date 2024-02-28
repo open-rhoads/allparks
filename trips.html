@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap CDN CSS link element -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+        <!-- Bootstrap icons CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- meta tags provide responsiveness and other page info -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Document title -->
+    <title>AllParks - Home</title>
+</head>
+<body>
+    <section class="wrapper">
+        <!-- top anchor -->
+        <a href="#" id="top"></a>
+        <!-- header element contains one row with 3 columns -->
+        <header class="container">
+            <nav class="row m-3">
+                <!-- Logo column -->
+                <section class="col-xs-12 col-lg-3">
+                    <!-- This should be a flex container with items aligned default flex-start -->
+                    <div class="d-flex">
+                        <a href="index.html"><img src="images/1x/mainlogo.png" alt="AllParks logo"></a>
+                    </div>
+                </section>
+                <!-- main nav column -->
+                <section class="col-xs-12 col-lg-6">
+                    <!-- This should be a flex container with items aligned default flex-start -->
+                    <nav class="d-flex jc-space-around">
+                        <a href="#content" class="sr-only">Skip to Content</a>
+                        <a href="map.html">Map</a>
+                        <a href="trips.html">Trips</a>
+                        <a href="community.html">Community</a>
+                        <a href="visits.html">Visits</a>
+                    </nav>
+                </section>
+                <!-- Search & secondary hamburger nav column -->
+                <section class="col-xs-12 col-lg-3">
+                    <!-- This should be a flex container with items aligned flex-end 
+                    Search and secondary hamburger nav menu-->
+                    <div class="d-flex jc-end">
+                        <i class="bi bi-search"></i>
+                        <input type="search" />
+                        <nav role="navigation" aria-label="second-menu">
+                            <!-- Hamburger menu control 
+                            the aria-expanded attribute would change via JavaScript 
+                            when the secondary menu is hidden-->
+                            <button aria-expanded="true" aria-controls="second-menu"><i class="bi bi-list"></i></button>
+                            <!-- Hamburger menu -->
+                            <div class="secondary" id="second-menu">
+                                <a href="#">Login</a>
+                                <a href="#">Profile</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Settings</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">Messages</a>
+                                <a href="#">About Us</a>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </nav>
+        </header>
+        <!-- main element contains... -->
+        <main class="container" id="content">
+            <h1>Trips</h1>
+            <section class="row m-3">
+                <div class="col-xs-12 d-flex jc-end">
+                    <button type="button" class="btn btn-light">New Trip</button>
+                </div>
+            </section>
+            <section class="row m-3">
+                <section class="col-12">
+                    <h2>Your Trips</h2>
+                    <!-- Trips display in full width carousel displays up to three trips at a time 
+                        and allows user to scroll through with side toggles.
+                        Displays typical page indicators -->
+
+                        <!-- Here is the Bootstrap version, maybe can work for this purpose...maybe cards inside it...not sure yet -->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="card-group">
+                                    <div class="card bg-dark">
+                                      <img src="images/petcopark1.jpg" class="card-img-top" alt="Petco Park">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Petco Park</h5>
+                                        <p class="card-text">March 2024</p>
+                                        <button type="button" class="btn btn-light">View Details</button>
+                                      </div>
+                                    </div>
+                                    <div class="card bg-dark">
+                                      <img src="images/levislanding.jpg" class="card-img-top" alt="Oracle park looking on the bay">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Oracle Park</h5>
+                                        <p class="card-text">April 2024</p>
+                                        <button type="button" class="btn btn-light">View Details</button>
+                                      </div>
+                                    </div>
+                                    <div class="card bg-dark">
+                                      <img src="images/coorsfielddenver.jpg" class="card-img-top" alt="Coors Field">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Coors Field</h5>
+                                        <p class="card-text">May 2024</p>
+                                        <button type="button" class="btn btn-light">View Details</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="card-group">
+                                    <div class="card bg-dark">
+                                      <img src="images/fenwaybanners.jpg" class="card-img-top" alt="Fenway Park banners">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Fenway Park</h5>
+                                        <p class="card-text">June 2024</p>
+                                        <button type="button" class="btn btn-light">View Details</button>
+                                      </div>
+                                    </div>
+                                    <div class="card bg-dark">
+                                      <img src="images/ballparkoutsidecity.jpg" class="card-img-top" alt="Dodger Stadium with LA skyline in the background">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Dodger Stadium</h5>
+                                        <p class="card-text">July 2024</p>
+                                        <button type="button" class="btn btn-light">View Details</button>
+                                      </div>
+                                    </div>
+                                    <div class="card bg-dark">
+                                      <img src="images/buschstadiumnight.jpg" class="card-img-top" alt="Busch Stadium with Eads bridge in background at night">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Busch Stadium</h5>
+                                        <p class="card-text">August 2024</p>
+                                        <button type="button" class="btn btn-light">View Details</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                </section>
+            </section>
+            <section class="row m-3">
+                <section class="col-12">
+                    <h3>Explore Trips</h3>
+                    <!-- Trips display in full width carousel displays up to three trips at a time 
+                    and allows user to scroll through with side toggles.
+                    Displays typical page indicators -->
+
+                    <!-- Here is the Bootstrap version, maybe can work for this purpose...maybe cards inside it...not sure yet -->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <div class="card-group">
+                                <div class="card bg-dark">
+                                    <img src="images/yankeestadiuminside.jpg" class="card-img-top" alt="Yankee Stadium">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Damn Yankees</h5>
+                                    <p class="card-text">Checked off Yankee Stadium...</p>
+                                    <button type="button" class="btn btn-light">View Details</button>
+                                    </div>
+                                </div>
+                                <div class="card bg-dark">
+                                    <img src="images/maninhouston.jpg" class="card-img-top" alt="Man in front of ballpark in Houston.">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Houston, We Have a Ballpark</h5>
+                                    <p class="card-text">Always fun watching the Astros...</p>
+                                    <button type="button" class="btn btn-light">View Details</button>
+                                    </div>
+                                </div>
+                                <div class="card bg-dark">
+                                    <img src="images/boyrunningbases.jpg" class="card-img-top" alt="Boy running to first base">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Home of the Pirates</h5>
+                                    <p class="card-text">Fun for the whole family...</p>
+                                    <button type="button" class="btn btn-light">View Details</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                            <div class="card-group">
+                                <div class="card bg-dark">
+                                    <img src="images/fenwayfromstands.jpg" class="card-img-top" alt="Fans cheering at Fenway park">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Fenway Magic</h5>
+                                    <p class="card-text">Love Fenway Franks...</p>
+                                    <button type="button" class="btn btn-light">View Details</button>
+                                    </div>
+                                </div>
+                                <div class="card bg-dark">
+                                    <img src="images/tmobilepark.jpg" class="card-img-top" alt="T-Mobile Park in Seattle">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Amazing City Views</h5>
+                                    <p class="card-text">Sleepless in Seattle at T-Mobile...</p>
+                                    <button type="button" class="btn btn-light">View Details</button>
+                                    </div>
+                                </div>
+                                <div class="card bg-dark">
+                                    <img src="images/braves.jpg" class="card-img-top" alt="Truist Park in Atlanta">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Hotlanta</h5>
+                                    <p class="card-text">Hits different down South...</p>
+                                    <button type="button" class="btn btn-light">View Details</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <!-- footer row contains one row with full width on mobile, but 2 even columns on medium up screens  -->
+        <footer class="container">
+            <section class="row m-1">
+                <!-- Footer address column -->
+                <section class="col-xs-12 col-md-6">
+                    <!-- This should be a flex container with items aligned center -->
+                    <div class="d-flex direction-column align-center">
+                        <p>AllParks</p>
+                        <p>111 Address Lane</p>
+                        <p>City, State, 11111</p>
+                    </div>
+                </section>
+                <!-- Footer nav links column -->
+                <section class="col-xs-12 col-md-6">
+                    <!-- This should be a flex container with items aligned center -->
+                    <nav class="d-flex direction-column align-center">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Copyright</a>
+                        <a href="#top">Return to Top</a>
+                    </nav>
+                </section>
+                <section class="col-12 d-flex jc-center">
+                    <p>AllParks believes in equal opportunities and we care about accessibility. 
+                        This site is designed witn accessibility in mind and is always working to improve any known accessibility issues.</p>
+                </section>
+            </section>
+        </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+/* body main background and text colors 
+- dark green and white 
+increase font size, change font */
+body {
+
+    color: #FFF;
+    font-family: "nanum gothic", arial sans-serif;
+    font-size: 1.5rem;
+}
+
+/* primary heading styles */
+h1, h2 {
+    font-weight: bold;
+    margin: 1rem;
+}
+
+/* main link color - peach 
+remove underline*/
+a {
+    color: #FFC6BD;
+    text-decoration: none;
+}
+/* change hover color */
+a:hover {
+    color: #C5E3CC;
+}
+
+
+/* header and footer background color */
+header, footer {
+    background-color: #2E1D1A;
+    border: 0.1rem solid #FFF;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+footer {
+    font-size: 1rem;
+}
+
+/* Responsive images & other image styles */
+img, div img {
+    border: 0.1rem solid #FFF;
+    height: auto;
+    max-width: 100%;
+
+}
+
+/* remove border from logo image */
+nav img {
+    border: none;
+}
+
+/* blog feature styles */
+article {
+    border-left: 0.1rem solid #FFF;
+}
+
+/* icon styles */
+i {
+    margin: 0.5rem;
+}
+
+/* Flex layout styles */
+.d-flex {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-end { 
+    justify-content: flex-end;
+}
+
+.jc-space-around {
+    justify-content: space-around;
+}
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-self-start {
+    align-self: flex-start;
+}
+
+.justify-self-end {
+    justify-self: flex-end;
+}
+
+/* wrapper styles */
+.wrapper {
+    background-color: #002E0B;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+/* height and width alterations */
+.h-100 {
+    height: 100%;
+}
+
+.sr-only {
+    display: none;
+}
+
+/* positioning alterations */
+/* tagline */
+.tagline {
+    bottom: 10%;
+    font-style: italic;
+    left: 55%;
+    position: relative;
+}
+
+/* home page feature styles */
+.feature {
+    background-color: #2E1D1A;
+    border: 0.1rem solid #FFF;
+    font-size: 1rem;
+    height: 100%;
+    padding:  0.5rem 1rem;
+}
+
+.small-text {
+    font-size: 1rem;
+}
+
+/* Post Details styles */
+.details p {
+    font-size: 1rem;
+}
+
+/* Secondary hamburger navigation will be hidden 
+by default with display property 
+
+JavaScript would be written to display the secondary menu
+when hamburger icon is clicked */
+.secondary {
+    /* display: none; */
+    background-color: #2E1D1A;
+    border: 0.1rem solid #FFC6BD;
+    padding: 0 0.5%;
+    position: absolute;
+    text-align: center;
+    top: 7.75%;
+    z-index: 1;
+}
+
+.secondary a {
+    border-bottom: 0.1rem solid #FFC6BD;
+    display: block;
+    width: 100%;
+}
+
+/* When the user clicks on the hamburger icon, the secondary nav displays */
+/* .secondary:active {
+    display: block;
+} */
+
+/* Carousel slide item width */
+.slide-item {
+    width: 33.33%;
+}
+
+/* Avatar image styles */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* post border */
+.post {
+    border: 0.1rem solid #FFF;
+}
+
+/* Assign a height to sarousel/card images */
+.card img, .h80 {
+    height: 80%;
+}
+
+/* limit search size */
+input[type="search"] {
+    max-width: 70%;
+}
+
+/* media queries to fix navigation */
+
+  /* Media queries to Fix tagline */
+  @media only screen and (max-width: 1200px) {
+    .tagline {
+        position: relative;
+        left: 45%
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .secondary {
+        position: absolute;
+        top: 20%;
+    }
+
+    .search {
+        justify-content: center;
+    }
+
+    .tagline {
+        position: relative;
+        left: 35%;
+        bottom: 15%;
+    }
+  }
+
+  @media only screen and (max-width: 810px) {
+    .tagline {
+        position: relative;
+        left: 25%;
+        bottom: 15%;
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    .tagline {
+        position: relative;
+        left: 10%;
+        bottom: 15%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .tagline {
+        position: relative;
+        left: 2%;
+        bottom: 15%;
+    }
+  }

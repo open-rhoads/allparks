@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap CDN CSS link element -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Bootstrap icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- meta tags provide responsiveness and other page info -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Document title -->
+    <title>AllParks - Home</title>
+</head>
+<body>
+    <section class="wrapper">
+        <!-- top anchor -->
+        <a href="#" id="top"></a>
+        <!-- header element contains one row with 3 columns -->
+        <header class="container">
+            <nav class="row m-3">
+                <!-- Logo column -->
+                <section class="col-xs-12 col-lg-3">
+                    <!-- This should be a flex container with items aligned default flex-start -->
+                    <div class="d-flex">
+                        <a href="index.html"><img src="images/1x/mainlogo.png" alt="AllParks logo"></a>
+                    </div>
+                </section>
+                <!-- main nav column -->
+                <section class="col-xs-12 col-lg-6">
+                    <!-- This should be a flex container with items aligned default flex-start -->
+                    <nav class="d-flex jc-space-around">
+                        <a href="#content" class="sr-only">Skip to Content</a>
+                        <a href="map.html">Map</a>
+                        <a href="trips.html">Trips</a>
+                        <a href="community.html">Community</a>
+                        <a href="visits.html">Visits</a>
+                    </nav>
+                </section>
+                <!-- Search & secondary hamburger nav column -->
+                <section class="col-xs-12 col-lg-3">
+                    <!-- This should be a flex container with items aligned flex-end 
+                    Search and secondary hamburger nav menu-->
+                    <div class="d-flex jc-end search">
+                        <i class="bi bi-search"></i>
+                        <input type="search" />
+                        <nav role="navigation" aria-label="second-menu">
+                            <!-- Hamburger menu control 
+                            the aria-expanded attribute would change via JavaScript 
+                            when the secondary menu is hidden-->
+                            <button aria-expanded="true" aria-controls="second-menu"><i class="bi bi-list"></i></button>
+                            <!-- Hamburger menu -->
+                            <div class="secondary" id="second-menu">
+                                <a href="#">Login</a>
+                                <a href="#">Profile</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Settings</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">Messages</a>
+                                <a href="#">About Us</a>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </nav>
+        </header>
+        <!-- main element contains 5 rows with varying width columns -->
+        <main class="container" id="content">
+            <h1>Home</h1>
+            <!-- full width hero  on all devices -->
+            <section class="row m-3">
+                <section class="col-12">
+                    <!-- This should be a flex container with items aligned center -->
+                    <section class="d-flex jc-center w-100" role="banner">
+                        <img src="images/ballparkhomehero.jpg" alt="City skyline featuring a ballpark." />
+                    </section>
+                    <p class="tagline">Where the Home Team always Wins</p>
+                </section>
+            </div>
+            <!-- About row with full width on mobile, but 2 even columns on medium up screens -->
+            <section class="row m-3">
+                <!-- Column with About Heading and description text -->
+                <div class="col-xs-12 col-md-6">
+                    <!-- This should be a flex container with items aligned direction column -->
+                    <div class="d-flex direction-column jc-space-around h-100">
+                        <h2>Our Mission</h2>
+                        <p>
+                            We believe that every park has something unique to offer.
+                        </p>
+                        <p>
+                            We strive to make it as easy as possible to explore each one and experience its story.
+                            <a href="#">Learn More.</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Column with About picture -->
+                <div class="col-xs-12 col-md-6">
+                    <!-- This should be a flex container with items aligned center -->
+                    <div class="d-flex-jc-center">
+                        <img src="images/aerialballpark.jpg" alt="Aerial view of a ballpark at night." />  
+                    </div>
+                </div>
+            </section>
+            <!-- other section Features row with full width on mobile, but 3 even columns on medium up screens -->
+            <section class="row m-3">
+                <!-- Feature column 1 -->
+                <div class="col-xs-12 col-md-4">
+                    <!-- This should be a flex container with items aligned center except description text -->
+                    <div class="d-flex direction-column align-center jc-space-between feature">
+                        <h2>Your Next Adventure</h2>
+                        <img src="images/planesoverballpark.jpg" alt="View of a ballpark next to the countryside with four jets flying above." class="h80" />
+                        <p>Plan your next visit seamlessly with our comprehensive park details.</p>
+                        <a href="map.html">Browse Map</a>
+                    </div>
+                </div>
+                <!-- Feature column 2 -->
+                <div class="col-xs-12 col-md-4 d-flex">
+                    <!-- This should be a flex container with items aligned center except description text -->
+                    <div class="d-flex direction-column align-center jc-space-between feature">
+                        <h2>Upcoming Trips</h2>
+                        <img src="images/oracleparksf.jpg" alt="View of Oracle park from the stands looking out on San Francisco Bay." class="h80" />  
+                        <p>Where are you going next?</p>
+                        <a href="trips.html">View Trips</a>
+                    </div>
+                </div>
+                <!-- Feature column 3 -->
+                <div class="col-xs-12 col-md-4 d-flex">
+                    <!-- This should be a flex container with items aligned center except description text -->
+                    <div class="d-flex direction-column align-center jc-space-between feature">
+                        <h2>Tell Your Friends</h2>
+                        <img src="images/petcopark2.jpg" alt="Petco Park from the outside sign." class="h80" />
+                        <p>Post your latest visit for the AllParks Community!</p>
+                        <a href="#">Share Trips</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Blog Features row with full width on mobile, but 3 even columns on medium up screens -->
+            <section class="row m-3">
+                <!-- Blog feature column 1 -->
+                <div class="col-xs-12 col-md-4 d-flex">
+                    <!-- This should be a flex container  -->
+                    <div class="d-flex direction-column jc-space-around">
+                        <h2>AllParks Blog</h2>
+                        <p>Need more parks? Check out these features from our blog.</p>
+                        <p>If you love it, be sure to <a href="#">Subscribe here!</a></p>
+                    </div>
+                </div>
+                <!-- Blog feature column 2 -->
+                <article class="col-xs-12 col-md-4 d-flex">
+                    <!-- This should be a flex container with items aligned center except description text -->
+                    <div class="d-flex direction-column align-center small-text">
+                        <img src="images/pittsburghpncpark.jpg" alt="PNC park in Pittsburgh from the stands looking on the city." class="h80" />
+                        <p>Meet the power AllParks user who was first to hit all the parks.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </article>
+                <!-- Blog feature column 3 -->
+                <article class="col-xs-12 col-md-4 d-flex">
+                    <!-- This should be a flex container with items aligned center except description text -->
+                    <div class="d-flex direction-column align-center small-text">
+                        <img src="images/fenway.jpg" alt="View of Fenway park sign over home plate from the upper stands." class="h80" />
+                        <p>As Major League Baseball's oldest park, explore what makes Fenway unique.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </article>
+            </section>
+            <section class="row  bg-dark">
+                <section class="col-xs-12 col-lg-6 d-flex direction-column">
+                    <h2>Newsletter</h2>
+                    <p>Enter your information to subscribe to our newsletter!</p>
+                </section>
+                <section class="col-xs-12 col-lg-6">
+                    <form action="test.php" method="post">
+                        <label class="form-label">First Name:
+                        <input type="text" name="firstname" class="form-control" required>
+                        </label>
+                        <label class="form-label">Last Name:
+                        <input type="text" name="lastname" class="form-control" required>
+                        </label>
+                        <label class="form-label">Email:
+                        <input type="email" name="email" class="form-control" required>
+                        </label>
+                        <label class="form-label">Subscribe:
+                        <input type="submit" name="submit" value="Sign Up" class="form-control">
+                        </label>
+                    </form>
+                </section>
+            </section>
+        </main>
+        <!-- footer row contains one row with full width on mobile, but 2 even columns on medium up screens  -->
+        <footer class="container">
+            <section class="row m-3">
+                <!-- Footer address column -->
+                <section class="col-xs-12 col-md-6">
+                    <!-- This should be a flex container with items aligned center -->
+                    <div class="d-flex direction-column align-center">
+                        <p>AllParks</p>
+                        <p>111 Address Lane</p>
+                        <p>City, State, 11111</p>
+                    </div>
+                </section>
+                <!-- Footer nav links column -->
+                <section class="col-xs-12 col-md-6">
+                    <!-- This should be a flex container with items aligned center -->
+                    <nav class="d-flex direction-column align-center">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Copyright</a>
+                        <a href="#top">Return to Top</a>
+                    </nav>
+                </section>
+                <section class="col-12 d-flex jc-center">
+                    <p>AllParks believes in equal opportunities and we care about accessibility. 
+                        This site is designed witn accessibility in mind and is always working to improve any known accessibility issues.</p>
+                </section>
+            </section>
+        </footer>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</body>
+</html>

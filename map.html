@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap CDN CSS link element -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+        <!-- Bootstrap icons CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- meta tags provide responsiveness and other page info -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Document title -->
+    <title>AllParks - Home</title>
+</head>
+<body>
+    <section class="wrapper">
+        <!-- top anchor -->
+        <a href="#" id="top"></a>
+        <!-- header element contains one row with 3 columns -->
+        <header class="container">
+            <nav class="row m-3">
+                <!-- Logo column -->
+                <section class="col-xs-12 col-lg-3">
+                    <!-- This should be a flex container with items aligned default flex-start -->
+                    <div class="d-flex">
+                        <a href="index.html"><img src="images/1x/mainlogo.png" alt="AllParks logo"></a>
+                    </div>
+                </section>
+                <!-- main nav column -->
+                <section class="col-xs-12 col-lg-6">
+                    <!-- This should be a flex container with items aligned default flex-start -->
+                    <nav class="d-flex jc-space-around">
+                        <a href="#content" class="sr-only">Skip to Content</a>
+                        <a href="map.html">Map</a>
+                        <a href="trips.html">Trips</a>
+                        <a href="community.html">Community</a>
+                        <a href="visits.html">Visits</a>
+                    </nav>
+                </section>
+                <!-- Search & secondary hamburger nav column -->
+                <section class="col-xs-12 col-lg-3">
+                    <!-- This should be a flex container with items aligned flex-end 
+                    Search and secondary hamburger nav menu-->
+                    <div class="d-flex jc-end">
+                        <i class="bi bi-search"></i>
+                        <input type="search" />
+                        <nav role="navigation" aria-label="second-menu">
+                            <!-- Hamburger menu control 
+                            the aria-expanded attribute would change via JavaScript 
+                            when the secondary menu is hidden-->
+                            <button aria-expanded="true" aria-controls="second-menu"><i class="bi bi-list"></i></button>
+                            <!-- Hamburger menu -->
+                            <div class="secondary" id="second-menu">
+                                <a href="#">Login</a>
+                                <a href="#">Profile</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Settings</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">Messages</a>
+                                <a href="#">About Us</a>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </nav>
+        </header>
+        <!-- main element contains... -->
+        <main class="container" id="content">
+            <h1>Map</h1>
+            <div class="row m-3">
+                <section class="col-xs-12 d-flex jc-end">
+                    <button type="button" class="btn btn-light">Filter</button>
+                </section>
+                <iframe
+                    width="600"
+                    height="450"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+                    &q=Space+Needle,Seattle+WA">
+                </iframe>
+            </div>
+        </main>
+        <!-- footer row contains one row with full width on mobile, but 2 even columns on medium up screens  -->
+        <footer class="container">
+            <section class="row m-3">
+                <!-- Footer address column -->
+                <section class="col-xs-12 col-md-6">
+                    <!-- This should be a flex container with items aligned center -->
+                    <div class="d-flex direction-column align-center">
+                        <p>AllParks</p>
+                        <p>111 Address Lane</p>
+                        <p>City, State, 11111</p>
+                    </div>
+                </section>
+                <!-- Footer nav links column -->
+                <section class="col-xs-12 col-md-6">
+                    <!-- This should be a flex container with items aligned center -->
+                    <nav class="d-flex direction-column align-center">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Copyright</a>
+                        <a href="#top">Return to Top</a>
+                    </nav>
+                </section>
+                <section class="col-12 d-flex jc-center">
+                    <p>AllParks believes in equal opportunities and we care about accessibility. 
+                        This site is designed witn accessibility in mind and is always working to improve any known accessibility issues.</p>
+                </section>
+            </section>
+        </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</body>
+</html>
